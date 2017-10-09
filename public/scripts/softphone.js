@@ -212,11 +212,8 @@ $(function() {
              console.dir(conn);
              alert("Voicemail");
              alert("callsid------"+conn.parameters.CallSid);
-             $.get("/http://yardidhruv-touchpoint.cs62.force.com/Click2Dial/services/apexrest/Touchpoint/TwilioVoiceMail?ParentCallSid==conn.parameters.CallSid", function(data,status) {
-              });
           });
 	}
-        
   // ---- VoiceMail --------- //
      SP.functions.attachUnHold = function(conn, holdid) {
       $("#action-buttons > button.unhold").click(function() {
