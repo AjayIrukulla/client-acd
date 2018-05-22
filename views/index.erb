@@ -20,8 +20,9 @@ window.onload = function() {myFunction()};
 
 function myFunction() {
      console.log(".............Testingg............");
-    var msg = parent.document.getElementById("00N5C000000qGvl_ileinner");
-		console.log("Salesforce Field: " + msg);
+    var form = document.getElementById("SoftphoneIframe");
+	this.form.elements.display.value = window.frameElement.offsetHeight;
+		console.log("Salesforce Field: " + form);
 }
 </script>
   <link rel="stylesheet" type="text/css" href="/css/dialer.css">
