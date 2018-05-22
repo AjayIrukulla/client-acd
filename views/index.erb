@@ -20,7 +20,7 @@ window.onload = function() {myFunction()};
 
 function myFunction() {
      console.log(".............Testingg............");
-    var form = document.getElementById("SoftphoneIframe");
+    var form = parent.document.getElementById("SoftphoneIframe");
 	this.form.elements.display.value = window.frameElement.offsetHeight;
 		console.log("Salesforce Field: " + form);
 }
